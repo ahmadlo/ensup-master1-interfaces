@@ -34,6 +34,13 @@ public class Produit {
 		return "Produit [idProduit=" + idProduit + ", nomProduit=" + nomProduit + ", prix=" + prix + ", quantite="
 				+ quantite + "]";
 	}
+	public Produit(int idProduit, String nomProduit, Double prix, int quantite) {
+		
+		this.idProduit = idProduit;
+		this.nomProduit = nomProduit;
+		this.prix = prix;
+		this.quantite = quantite;
+	}
 	
 	
 

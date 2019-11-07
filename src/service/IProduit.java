@@ -11,4 +11,5 @@ public interface IProduit {
 	public void supprimerProduit(int idProduit);
 	public List<Produit> listerTousLesProduits();
 	public Produit listerUnProduit(int idProduit);
+	public void AfficherListeProduits(List<Produit> produits);
 }
