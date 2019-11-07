@@ -9,12 +9,15 @@ import metier.Produit;
 public class IProduitImpl implements IProduit{
 
 	
-	Collection<Produit> base = new ArrayList<Produit>();
+	public static List<Produit> base = new ArrayList<Produit>();
 	
-	public void init() {
+	@Override
+	public List<Produit> init() {
+		
 		for (int i = 1; i <= 10; i++) {
 			base.add(new Produit(i, "Produit "+i, i*10.3, i*2));
 		}
+		return (List<Produit>) base;
 	}
 	@Override
 	public void ajouterProduit(Produit p) {
